@@ -1,0 +1,1 @@
+<div id="about"><h4> This Storage System is made as a part of Web Development assignment. Coded with ❤️️ by Firman, Thariq, and Zuha.</h4></div>
