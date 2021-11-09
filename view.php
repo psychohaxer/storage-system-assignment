@@ -6,11 +6,11 @@
 
     $barcode = "";
     $item_name = "";
-    $item_qt = "";
+    $item_qty = 0;
 
     if(isset($_POST['submit'])){
-        // var_dump($_POST);
-        $item->barcode = $_GET['barcode'];
+        var_dump($_POST);
+        $item->barcode = $_POST['barcode'];
         $item->item_name = $_POST['item_name'];
         $item->item_qty = $_POST['item_qty'];
         $state = $_POST['state'];
@@ -18,7 +18,7 @@
         if($state == 'edit'){
             $item->editData();
         } elseif($state == 'create'){
-            $item->createData();
+            $item->create_item();
         }
         header("Location:.");
     }
@@ -36,6 +36,10 @@
         if($_GET['state'] == 'delete'){
             $item->barcode = $_GET['barcode'];
             $item->deleteData();
+            $barcode = "";
+            $item_name = "";
+            $item_qty = 0;
+            header("Location:.");
         }
     }
 ?>

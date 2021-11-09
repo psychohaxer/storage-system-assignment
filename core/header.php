@@ -8,10 +8,10 @@
         
         <style ="text/css">
             body {
-                background-image:url("img/haihead.jpg");
+                /* background-image:url("img/haihead.jpg");
                 background-repeat:no-repeat;
                 background-position:center;
-                background-attachment:fixed;
+                background-attachment:fixed; */
             }
         </style>
         

@@ -26,7 +26,7 @@
         public static function readAllData(){
             $arrayitems = array(); // Menampung seluruh record yang dipanggil
 
-            $query = "SELECT * FROM items"; 
+            $query = "SELECT * FROM items ORDER BY item_name"; 
             $database = new Database();
             $connection = $database->connect();
             $result = $connection->query($query) or die($connection->error);
